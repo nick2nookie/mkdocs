@@ -55,15 +55,13 @@ on your background.
 
 For reference this is the official `Python tutorial`_.
 
-.. note::
+```Catatan
   Since version 15.0, Odoo is actively transitioning to using its own in-house developed `OWL
   framework <https://odoo.github.io/owl/>`_ as part of its presentation tier. The legacy JavaScript
   framework is still supported but will be deprecated over time. This will be discussed further in
   advanced topics.
-
+```
 ## Odoo modules
-
-
 
 Both server and client extensions are packaged as *modules* which are
 optionally loaded in a *database*. A module is a collection of functions and data that target a
