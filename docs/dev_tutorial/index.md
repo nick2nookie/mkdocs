@@ -1,6 +1,5 @@
 # `Chapter 1: Architecture Overview`
 
-
 ## Tutorial Development
 
 * `Chapter 1: Architecture Overview`
@@ -20,13 +19,12 @@
 * `Chapter 15: A Brief History Of QWeb`
 * `Chapter 16: Polish Your Code And Submit Your PR`
 
-## Fungsional
-```
-disini kita akan belajar membuat Setup Modul-modul dan pembahasanya secara fungsional
-1. Sales
-2. Purchase
-3. Accounting
-4. Manufacture
-5. Inventory
-```
-## Blog
+# Getting Started
+
+kita segera mulai pembelajaran development Odoo! kita akan belajar untuk mengembangkan modul Odoo kita sendiri.
+
+Tujuan dari tutorial ini adalah agar kita dapat mendapatkan wawasan tentang bagian terpenting dari kerangka pengembangan Odoo sambil mengembangkan modul Odoo kita sendiri untuk mengelola aset [real estate]. ada berberapa Bab yang harus sesuai urutannya karena mencakup pengembangan aplikasi Odoo secara bertahap.
+
+Dengan kata lain, setiap bab bergantung pada bab sebelumnya.
+
+ayo kita mulai
