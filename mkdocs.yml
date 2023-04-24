@@ -3,8 +3,7 @@ site_name: nick2nookie web dev
 site_url: https://nick2nookie.github.io/mkdocs3
 site_author: nick 2 nookie
 site_description: >-
-  Write your documentation in Markdown and create a professional static site in
-  minutes – searchable, customizable, for all devices
+  web static site untuk belajar odoo dan dokumentasi odoo
 
 # Repository
 repo_name: nick2nookie/mkdocs3
@@ -65,12 +64,6 @@ theme:
 plugins:
   - search:
       separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
-## - minify:
-##     minify_html: true
-#
-## Hooks
-#hooks:
-#  - material/.overrides/hooks/translations.py
 
 # Customization
 extra:
@@ -126,3 +119,5 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+
+
