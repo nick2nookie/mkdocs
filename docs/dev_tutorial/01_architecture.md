@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-.. _tutorials/getting_started/01_architecture:
-
 # Chapter 1: Architecture Overview
 
 ## Multitier application
@@ -14,13 +11,12 @@ Odoo follows a `multitier architecture`, meaning that the presentation, the busi
 
 (image from Wikipedia):
 
-<<<<<<< HEAD
 ![Three-tier architecture](01_architecture/three_tier.svg) { align=center }
 =======
 
 ![Three-tier architecture](01_architecture/three_tier.svg){align=center}
 
->>>>>>> 68c7f463f56c21dc82916def1ab65cd2f301802b
+
 
 The presentation tier is a combination of HTML5, JavaScript and CSS. The logic tier is exclusively written in Python, while the data tier only supports PostgreSQL as an RDBMS.
 

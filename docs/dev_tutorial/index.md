@@ -80,3 +80,74 @@ may also be referred to as *addons* and the directories where the Odoo server fi
 form the ``addons_path``.
 
 ### Composition of a module
+
+An Odoo module **can** contain a number of elements:
+
+*1* `Business objects`
+    A business object (e.g. an invoice) is declared as a Python class. The fields defined in these classes are automatically mapped to database columns thanks to the `ORM (Object-Relational Mapping)` layer.
+
+*2* `Object views`
+    Define UI display
+
+*3* `Data files`
+    XML or CSV files declaring the model data:
+
+    - views or reports,
+    - configuration data (modules parametrization),
+    - demonstration data
+    - and more
+
+*4* `Web controllers`
+    Handle requests from web browsers
+
+*5* `Static web data`
+    Images, CSS or JavaScript files used by the web interface or website
+
+None of these elements are mandatory. Some modules may only add data files (e.g. country-specific accounting configuration), while others may only add business objects. During this training, we will create business objects, object views and data files.
+
+### Module structure
+
+Each module is a directory within a *module directory*. Module directories
+are specified by using the :option:`--addons-path <odoo-bin --addons-path>`
+option.
+
+An Odoo module is declared by its :ref:`manifest <reference/module/manifest>`.
+
+When an Odoo module includes business objects (i.e. Python files), they are organized as a
+`Python package <https://docs.python.org/3/tutorial/modules.html#packages>`_
+with a ``__init__.py`` file. This file contains import instructions for various Python
+files in the module.
+
+Here is a simplified module directory:
+
+``` bash title="Direktori Modul"
+    module
+    ├── models
+    │   ├── *.py
+    │   └── __init__.py
+    ├── data
+    │   └── *.xml
+    ├── __init__.py
+    └── __manifest__.py
+```
+
+## Odoo Editions
+
+Odoo is available in `two versions`_: Odoo Enterprise (licensed & shared sources) and Odoo Community
+(open-source). In addition to services such as support or upgrades, the Enterprise version provides extra
+functionalities to Odoo. From a technical point-of-view, these functionalities are simply
+new modules installed on top of the modules provided by the Community version.
+
+Ready to start? Before writing actual code, let's go to the :doc:`next chapter <02_setup>` to review
+the Odoo installation process. Even if Odoo is already running on your system, we strongly suggest
+you go through this chapter to make sure we start on the same page during the development of our new
+application.
+
+__multitier architecture:
+    https://en.wikipedia.org/wiki/Multitier_architecture
+
+__Python tutorial:
+    https://docs.python.org/3.7/tutorial/
+
+__two versions:
+    https://www.odoo.com/page/editions
